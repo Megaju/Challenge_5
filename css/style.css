@@ -46,9 +46,13 @@ nav {
 /* ================= STATE ==================== */
 /* ============================================ */
 a {
-    
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
 }
 
 a:hover {
-    
+    color: #40a329;
+    text-decoration: none;
+    transition: 0.2s;
 }
