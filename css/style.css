@@ -6,7 +6,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     
 }
 
@@ -104,6 +104,16 @@ aside i.fa-black {
     background-color: #000;
     color: #fff;
     padding: 8px 0 0 10px;
+}
+
+/* --- second aside --- */
+.aside-left {
+    background-color: #000;
+}
+
+aside nav ul li a {
+    text-transform: uppercase;
+    color: #fff;
 }
 
 /* --- pied de page --- */
