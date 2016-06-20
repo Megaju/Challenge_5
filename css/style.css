@@ -26,6 +26,25 @@ section {
     
 }
 
+.header-article {
+    padding: 20px;
+}
+.article-img {
+    max-height: 245px;
+    overflow: hidden;
+}
+.header-article span, .header-article h2 {
+    margin: 15px 0 0 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+}
+.header-article span {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
 aside {
     
 }
@@ -38,6 +57,12 @@ footer {
 /* ============================================ */
 /* ================= MODULE =================== */
 /* ============================================ */
+/* --- suppression des margins des col-* --- */
+.no-padding > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 /* --- navigation princiapel --- */
 .navbar {
     margin: 0;
