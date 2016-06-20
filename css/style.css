@@ -10,8 +10,29 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+h2 {
+    font-weight: 300;
+    margin: 30px 0 10px 10px;
+}
+
+aside h2 {
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    font-size: #000;
+    border-top: 5px solid #000;
+    margin: 60px 0 30px 0;
+}
+
+section h2 {
+    font-weight: 300;
+    margin: 30px 0 10px 0;
+}
+
 p {
-    
+    font-size: 16px;
+    margin: 30px 10px;
 }
 
 
@@ -26,12 +47,6 @@ header {
 section {
     background-color: #fff;
     padding: 0 10px 0 0;
-    border-bottom: 1px solid gray;
-}
-
-section h2 {
-    font-weight: 300;
-    margin: 30px 0 10px 10px;
 }
 
 section p {
@@ -39,7 +54,7 @@ section p {
     margin: 30px 10px;
 }
 
-section a {
+section a, aside a {
     color: #24890d;
     text-transform: capitalize;
 }
@@ -60,14 +75,38 @@ section a {
 }
 .header-article span {
     font-size: 12px;
-    font-weight: 700;
     margin-bottom: 40px;
 }
 
+/* --- ASIDE --- */
 aside {
-    
+    background-color: #fff;
 }
 
+aside .upcoming {
+    margin-bottom: 20px;
+}
+aside .upcoming p:first-child {
+    color: #24890d;
+}
+aside .upcoming p {
+    margin: 0;
+}
+aside p {
+    margin: 0;
+}
+aside i.fa-black {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 5px;
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 0 0 10px;
+}
+
+/* --- pied de page --- */
 footer {
     
 }
