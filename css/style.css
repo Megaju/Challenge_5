@@ -38,6 +38,7 @@ footer {
 /* ============================================ */
 /* ================= MODULE =================== */
 /* ============================================ */
+/* --- navigation princiapel --- */
 .navbar {
     margin: 0;
     padding: 0;    
@@ -86,13 +87,14 @@ a {
     transition: 0.2s;
 }
 
-li.active a {
-    color: #24890d;
-}
-
 a:hover, a:focus, a:active, a.active {
     color: #24890d;
     font-weight: 700;
     text-decoration: none;
     transition: 0.2s;
+}
+
+
+li.active a {
+    color: #24890d;
 }
