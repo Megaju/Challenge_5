@@ -22,10 +22,29 @@ header {
     
 }
 
+/* --- sections blanches --- */
 section {
-    
+    background-color: #fff;
+    padding: 0 10px 0 0;
+    border-bottom: 1px solid gray;
 }
 
+section h2 {
+    font-weight: 300;
+    margin: 30px 0 10px 10px;
+}
+
+section p {
+    font-size: 16px;
+    margin: 30px 10px;
+}
+
+section a {
+    color: #24890d;
+    text-transform: capitalize;
+}
+
+/* --- articles (BLOG - RECORDS - VIDEOS) --- */
 .header-article {
     padding: 20px;
 }
@@ -61,6 +80,11 @@ footer {
 .no-padding > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+/* --- video youtube --- */
+section iframe {
+    margin: 20px 10px 0 10px;
 }
 
 /* --- navigation princiapel --- */
