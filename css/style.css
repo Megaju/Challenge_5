@@ -65,20 +65,27 @@ section a, aside a {
 }
 
 /* --- articles (BLOG - RECORDS - VIDEOS) --- */
-.header-article {
-    padding: 20px;
-}
-.article-img {
-    max-height: 245px;
+.section-article {
+    position: relative;
+    height: 345px;
     overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-    .article-img {
-        height: auto;
-        max-width: 100%
-    }
+.header-article {
+    position: absolute;
+    width: 100%;
+    height: 95px;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #000;
 }
+
+.article-img img {
+    height: 100%;
+}
+
+
 
 .header-article span, .header-article h2 {
     margin: 15px 0 0 10px;
@@ -153,6 +160,14 @@ footer a, footer a:hover {
 .no-padding > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+/* --- fond pattern img --- */
+.patt-light {
+     background-image: url(../images/pattern-light.svg);   
+}
+.patt-dark {
+     background-image: url(../images/pattern-dark.svg);   
 }
 
 /* --- video youtube --- */
