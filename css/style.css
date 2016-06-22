@@ -67,6 +67,14 @@ section a, aside a {
     max-height: 245px;
     overflow: hidden;
 }
+
+@media screen and (min-width: 768px) {
+    .article-img {
+        height: auto;
+        max-width: 100%
+    }
+}
+
 .header-article span, .header-article h2 {
     margin: 15px 0 0 10px;
     color: #fff;
@@ -164,6 +172,23 @@ li:first-child {
 li {
     padding: 0 0 0 15px;
     border-bottom: 1px solid grey;
+}
+
+@media screen and (min-width: 768px) {
+    .nav li  {
+        border-bottom : 0px;
+    }
+
+    .nav li a {
+        border-bottom : 0px;
+        font-weight: 400;
+    }
+
+    .nav li:first-child {
+        border-top: 0px;
+        margin-top: 0;
+
+    }
 }
 
 .btn-search {
