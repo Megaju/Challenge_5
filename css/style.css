@@ -1,300 +1,98 @@
-/* ============================================ */
-/* ================= BASE ===================== */
-/* ============================================ */
-body {
+/* --- trucs de base --- */
+a {
+    color: #fff;
+}
+a:hover {
+    color: green;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* --- virer les margin et padding des col-* --- */
+[class*='col-'] {margin: 0;padding: 0;}
+
+/* --- header - h1 - nav --- */
+header {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
     background-color: #000;
-    font-family: 'Lato', sans-serif;
+    height: 50px;
+    line-height: 50px;
 }
 
 h1 {
-    
-}
-
-h2 {
-    font-weight: 300;
-    margin: 30px 0 10px 10px;
-}
-
-aside h2 {
-    height: 32px;
-    line-height: 32px;
-    font-size: 16px;
-    font-weight: 700;
-    font-size: #000;
-    border-top: 5px solid #000;
-    margin: 60px 0 30px 0;
-}
-
-aside.aside-left h2 {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-section h2 {
-    font-weight: 300;
-    margin: 30px 0 10px 0;
-}
-
-p {
-    font-size: 16px;
-    margin: 30px 10px;
-}
-
-
-/* ============================================ */
-/* ================= LAYOUT =================== */
-/* ============================================ */
-header {
-    
-}
-
-/* --- sections blanches --- */
-section {
-    background-color: #fff;
-    padding: 0 10px 0 0;
-}
-
-section p {
-    font-size: 16px;
-    margin: 30px 10px;
-}
-
-section a, aside a {
-    color: #24890d;
-    text-transform: capitalize;
-}
-
-/* --- articles (BLOG - RECORDS - VIDEOS) --- */
-.section-article {
-    position: relative;
-    height: 345px;
-    overflow: hidden;
-}
-
-.header-article {
     position: absolute;
-    width: 100%;
-    height: 95px;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
+    left: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    line-height: 50px;
+}
+
+.search-case {
+    float: right;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.toogle {
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 18px 0 0 0;
     background-color: #000;
 }
-
-.article-img img {
-    height: 100%;
-}
-
-
-
-.header-article span, .header-article h2 {
-    margin: 15px 0 0 10px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 18px;
-}
-.header-article span {
-    font-size: 12px;
-    margin-bottom: 40px;
-}
-p.feat-video {
-    font-size: 14px;
-    padding: 10px 0 50px 0;
-    font-style: italic;
-}
-/* --- ASIDE --- */
-aside {
+span.toogle-element {
+    display: block;
+    width: 20px;
+    height: 2px;
     background-color: #fff;
+    margin: 0 auto 4px auto;
 }
 
-aside .upcoming {
-    margin-bottom: 20px;
-}
-aside .upcoming p:first-child {
-    color: #24890d;
-}
-aside .upcoming p {
-    margin: 0;
-}
-aside p {
-    margin: 0;
-}
-aside i.fa-black {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    bottom: 5px;
-    font-size: 12px;
-    background-color: #000;
-    color: #fff;
-    padding: 8px 0 0 10px;
+nav {
+    height: 50px;
 }
 
-/* --- second aside --- */
-.aside-left {
-    padding: 10px;
-    background-color: #000;
-}
-
-aside nav ul li a {
+nav ul li a {
     text-transform: uppercase;
     color: #fff;
 }
 
-/* --- pied de page --- */
+/* --- fond du second container --- */
+.second-container {
+    background-color: #684;
+}
+
+/* --- couleurs pour tester le positionnement des blocs --- */
+.featured-section {
+    min-height: 260px;
+    background-color: #654;
+}
+
+.aside-left {
+    min-height: 960px;
+    
+    background-color: #984;
+}
+
+.aside-right {
+    height: 700px;
+    background-color: #324;
+    color: #fff;
+}
+
+.audiotheme {
+    min-height: 700px;
+}
+
 footer {
-    border-top: 1px solid #797979;
-    padding: 20px 0;
-}
-footer a, footer a:hover {
-    font-weight: 300;
-    font-size: 12px;
-    margin: 0 12px;
-}
-
-
-/* ============================================ */
-/* ================= MODULE =================== */
-/* ============================================ */
-/* --- suppression des margins des col-* --- */
-.no-padding > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-}
-
-/* --- fond pattern img --- */
-.patt-light {
-     background-image: url(../images/pattern-light.svg);   
-}
-.patt-dark {
-     background-image: url(../images/pattern-dark.svg);   
-}
-
-/* --- video youtube --- */
-section iframe {
-    margin: 20px 10px 0 10px;
-}
-
-/* --- navigation princiapel --- */
-.navbar {
-    margin: 0;
-    padding: 0;    
-}
-
-.navbar-toggle {
-    width: 50px;
+    background-color: #000;
     height: 50px;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-    background-color: gray;
-}
-
-span.icon-bar {
-    margin: auto;
-    background-color: #fff;
-}
-
-li:first-child {
-    margin-top: 20px;
-    border-top: 1px solid grey;
-}
-
-li {
-    padding: 0 0 0 15px;
-    border-bottom: 1px solid grey;
-}
-
-@media screen and (min-width: 768px) {
-    .nav li  {
-        border-bottom : 0px;
-    }
-
-    .nav li a {
-        border-bottom : 0px;
-        font-weight: 400;
-    }
-
-    .nav li:first-child {
-        border-top: 0px;
-        margin-top: 0;
-
-    }
-}
-
-.btn-search {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    background-color: #24890d;
-}
-
-/* --- navbar secondaire --- */
-.nav-second ul li a {
-    font-size: 12px;
-    font-weight: 400;
-    padding: 10px 0;
-}
-.nav-second ul li {
-    margin: 0;
-    padding: 0;
-}
-.nav-second ul {
-    width: 99%;
-    margin: auto;
-    padding: 0;
-}
-
-/* --- champ de recherche --- */
-.search {
-    height: 20px;
-    margin-top: 50px;
-    background-color: #191919;
-    border: 1px solid #474747;
-    color: #939393;
-    border-radius: 2px;
-}
-
-/* --- FIGURE et FIGCAPTION + Text à la fin du aside-left --- */
-figure p, p.l {
-    font-size: 10px;
-    color: #939393;
-    margin: 10px 0 5px 0;
-}
-figure h3 {
-    font-size: 14px;
-    color: #fff;
-    margin: 0;
-}
-
-p.l {
-    margin: 50px 0;
-    font-size: 14px;
-}
-p.l a {
-    color: #fff;
-}
-
-
-/* ============================================ */
-/* ================= STATE ==================== */
-/* ============================================ */
-a {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-a:hover, a:focus, a:active, a.active {
-    color: #24890d;
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-
-li.active a {
-    color: #24890d;
 }
