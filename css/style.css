@@ -90,14 +90,19 @@ nav ul li a {
 }
 /* --- aside droit --- */
 .aside-right {
-    
+    padding: 80px 30px;
 }
+/* table */
 .aside-right tr {
     display: block;
     width: auto;
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #9f9f9f;
+}
+.aside-right tr:last-child {
+    border: 0;
+    margin-bottom: 60px;
 }
 .aside-right td a {
     text-decoration: none;
@@ -108,6 +113,27 @@ nav ul li a {
 }
 .aside-right td.lieu {
     font-style: italic;
+}
+/* h2 + p */
+.aside-right h2 {
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 25px 0;
+    font-weight: 900;
+    border-top: 4px solid #000;
+}
+.aside-right h2 i {
+    position: relative;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    line-height: 30px;
 }
 
 
