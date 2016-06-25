@@ -1,6 +1,11 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 /* --- trucs de base --- */
 a {
-    color: #fff;
+    color: green;
+    text-decoration: underline;
 }
 a:hover {
     color: green;
@@ -65,9 +70,28 @@ nav ul li a {
     color: #fff;
 }
 
+/* --- LE BLOC AUDIOTHEME FRAMEWORK DEMO + ASIDE RIGHT --- */
+.c-white {
+    background-color: #fff;
+}
+
+.audiotheme {
+    padding: 80px 120px;
+}
+.audiotheme h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+}
+.audiotheme p {
+    font-size: 16px;
+    margin: 30px 0 30px 0;
+}
+
+
 /* --- fond du second container --- */
 .second-container {
-    background-color: #684;
+    
 }
 
 /* --- couleurs pour tester le positionnement des blocs --- */
@@ -84,7 +108,7 @@ nav ul li a {
 
 .aside-right {
     height: 700px;
-    background-color: #324;
+    outline: 1px solid #999;
     color: #fff;
 }
 
