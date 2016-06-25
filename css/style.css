@@ -88,6 +88,28 @@ nav ul li a {
     font-size: 16px;
     margin: 30px 0 30px 0;
 }
+/* --- aside droit --- */
+.aside-right {
+    
+}
+.aside-right tr {
+    display: block;
+    width: auto;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #999;
+}
+.aside-right td a {
+    text-decoration: none;
+}
+.aside-right td {
+    display: block;
+    color: #999;
+}
+.aside-right td.lieu {
+    font-style: italic;
+}
+
 
 
 /* --- fond du second container --- */
@@ -105,12 +127,6 @@ nav ul li a {
     min-height: 960px;
     
     background-color: #984;
-}
-
-.aside-right {
-    height: 700px;
-    outline: 1px solid #999;
-    color: #fff;
 }
 
 .audiotheme {
