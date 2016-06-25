@@ -92,13 +92,16 @@ nav ul li a {
 .aside-right {
     padding: 80px 30px;
 }
+.aside-right table {
+    width: 100%;
+}
 /* table */
 .aside-right tr {
     display: block;
     width: auto;
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
-    border-bottom: 1px solid #9f9f9f;
+    border-bottom: 1px solid #e1e1e1;
 }
 .aside-right tr:last-child {
     border: 0;
@@ -135,7 +138,17 @@ nav ul li a {
     color: #fff;
     line-height: 30px;
 }
-
+.aside-right p {
+    font-size: 12px;
+    color: #999;
+    padding: 5px 0 30px 0;
+    font-style: italic;
+    line-height: 20px;
+    border-bottom: 1px solid  #e1e1e1;
+}
+.aside-right a {
+    text-decoration: none;
+}
 
 
 /* --- fond du second container --- */
