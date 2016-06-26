@@ -24,6 +24,7 @@
             <div class="logo pull-left">
                 <h1>Progeny MMXIV</h1></div>
 
+            <!-- navigation - disparait en xs seulement -->
             <nav class="hidden-xs">
                 <ul class="list-unstyled list-inline">
                     <li><a href="#">Home</a></li>
@@ -37,18 +38,28 @@
                 </ul>
             </nav>
 
-            <div class="toogle hidden-sm hidden-md hidden-lg">
+            <!-- bouton toogle -->
+            <div onclick="navToogle()" class="toogle hidden-sm hidden-md hidden-lg">
                 <span class="toogle-element"></span>
                 <span class="toogle-element"></span>
                 <span class="toogle-element"></span>
             </div>
+            <!-- script pour gérer l'apparation et la disparition de la nav en xs -->
+            <script>
+                function navToogle() {
+                    if (document.getElementById('navigation').style.display == 'none') {
+                        document.getElementById('navigation').style.display = 'block';
+                    } else {
+                        document.getElementById('navigation').style.display = 'none';
+                    }
+                }
+            </script>
 
+            <!-- input search -->
             <div id="search-case" class="col-xs-1 col-sm-1 col-md-1" onclick="searching()">
                 <i class="fa fa-search"></i>
             </div>
-
-
-
+            <!-- script pour gérer l'apparation et la disparition de l'input search -->
             <script>
                 function searching() {
                     if (document.getElementById('search-box').style.display == 'none') {
@@ -58,20 +69,35 @@
                     }
                 }
             </script>
-        </header>
 
+        </header>
+        
+        <!-- navigation en mode xs que l'on fait apparaitre et disparaitre -->
+        <nav id="navigation" class="nav-xs hidden-sm hidden-md hidden-lg">
+            <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Gigs</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Vidéos</a></li>
+                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+        
         <!-- contaneur secondaire -->
         <div class="row">
             <div class="second-container col-xs-12 col-sm-12 col-md-10 col-md-push-2">
                 <!-- featured section -->
                 <section class="featured-section col-xs-12 col-sm-12 col-md-12">
-                   
+
                     <!-- bloc recherche -->
                     <div id="search-box">
                         <input type="search" value="Search..." class="form-control">
                     </div>
                     <!-- /bloc recherche -->
-                    
+
                     <!-- c'est là qu'on va mettre les 3 img -->
                 </section>
 
