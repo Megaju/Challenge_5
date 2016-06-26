@@ -36,7 +36,10 @@ h1 {
     line-height: 50px;
 }
 
-.search-case {
+/* ------------------------- */
+/* ------------------------- */
+/* --- boutton recherche --- */
+#search-case {
     float: right;
     background-color: green;
     width: 50px;
@@ -44,7 +47,29 @@ h1 {
     color: #fff;
     font-weight: 700;
     text-align: center;
+    cursor: pointer;
 }
+#search-case:hover {
+    background-color: #095;
+}
+/* --- bloc qui disparait et apparait --- */
+#search-box {
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+#search-box input {
+    width: 33%;
+    height: 30px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+/* ------------------------- */
+/* ------------------------- */
+
 
 .toogle {
     float: right;

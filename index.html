@@ -43,7 +43,21 @@
                 <span class="toogle-element"></span>
             </div>
 
-            <div class="search-case col-xs-1 col-sm-1 col-md-1"><i class="fa fa-search"></i></div>
+            <div id="search-case" class="col-xs-1 col-sm-1 col-md-1" onclick="searching()">
+                <i class="fa fa-search"></i>
+            </div>
+
+
+
+            <script>
+                function searching() {
+                    if (document.getElementById('search-box').style.display == 'none') {
+                        document.getElementById('search-box').style.display = 'block';
+                    } else {
+                        document.getElementById('search-box').style.display = 'none';
+                    }
+                }
+            </script>
         </header>
 
         <!-- contaneur secondaire -->
@@ -51,6 +65,13 @@
             <div class="second-container col-xs-12 col-sm-12 col-md-10 col-md-push-2">
                 <!-- featured section -->
                 <section class="featured-section col-xs-12 col-sm-12 col-md-12">
+                   
+                    <!-- bloc recherche -->
+                    <div id="search-box">
+                        <input type="search" value="Search..." class="form-control">
+                    </div>
+                    <!-- /bloc recherche -->
+                    
                     <!-- c'est là qu'on va mettre les 3 img -->
                 </section>
 
@@ -89,11 +110,11 @@
                                 <td>May 20, 2017</td>
                             </tr>
                         </table>
-                        
+
                         <h2><i class="fa fa-play"></i>FEATURED VIDEO</h2>
-                        <img src="images/audiotheme-overview-video-thumbnail.jpg" alt="audio theme" class="img-responsive"/>
-                        <p>Overview showcasing a few of the features available in the <a href="#">AudioTheme Framework</a>  via the WordPress admin.</p>
-                        
+                        <img src="images/audiotheme-overview-video-thumbnail.jpg" alt="audio theme" class="img-responsive" />
+                        <p>Overview showcasing a few of the features available in the <a href="#">AudioTheme Framework</a> via the WordPress admin.</p>
+
                     </aside>
                 </section>
             </div>
