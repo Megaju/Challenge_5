@@ -37,6 +37,46 @@ h1 {
     line-height: 50px;
 }
 
+/* --- Header --- */
+.featured-section {
+    background :#000000 url(../images/pattern-dark.svg) repeat;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-img {
+    background-color : #000000;
+    color : #ffffff;
+    padding : 15px;
+}
+
+.article-img {
+    max-height: 200px;
+    width : 100%;
+    overflow: hidden;
+}
+
+.article-img:hover {
+    opacity: 0.8;
+}
+
+.header-img h2 {
+    font-weight: 300;
+    margin: 10px 0 0 0;
+}
+
+.header-img h2:hover, .header-img span:hover {
+    color: #41A62A;
+    font-weight : 300;
+}
+
+
+.header-img h2 {
+    font-size:18px;
+}
+
 /* ------------------------- */
 /* ------------------------- */
 /* --- boutton recherche --- */
