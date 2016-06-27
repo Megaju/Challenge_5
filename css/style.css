@@ -429,4 +429,8 @@ ul.gauche li a i {
 footer {
     background-color: #000;
     height: 50px;
+    padding: 10px 30px;
+}
+footer a {
+    color : rgb(179,179,179);
 }
