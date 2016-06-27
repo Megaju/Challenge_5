@@ -165,10 +165,6 @@ span.toogle-element {
     border-bottom: 1px solid  #555;
 }
 
-nav {
-    height: 50px;
-}
-
 nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -267,8 +263,6 @@ nav ul li a {
 }
 
 .aside-left {
-    min-height: 960px;
-    
     background-color: #984;
 }
 
@@ -354,11 +348,6 @@ ul.gauche li a i {
 .zone-img {
     background :#b2b2b2 url(../images/pattern-light.svg) repeat;
     min-height : 60px;
-}
-
-.zone-img img {
-    height : auto;
-    max-width : 100%;
 }
 
 .zone-img img:hover {
