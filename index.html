@@ -47,10 +47,10 @@
             <!-- script pour gérer l'apparation et la disparition de la nav en xs -->
             <script>
                 function navToogle() {
-                    if (document.getElementById('navigation').style.display == 'none') {
-                        document.getElementById('navigation').style.display = 'block';
-                    } else {
+                    if (document.getElementById('navigation').style.display == 'block') {
                         document.getElementById('navigation').style.display = 'none';
+                    } else {
+                        document.getElementById('navigation').style.display = 'block';
                     }
                 }
             </script>
@@ -62,16 +62,16 @@
             <!-- script pour gérer l'apparation et la disparition de l'input search -->
             <script>
                 function searching() {
-                    if (document.getElementById('search-box').style.display == 'none') {
-                        document.getElementById('search-box').style.display = 'block';
-                    } else {
+                    if (document.getElementById('search-box').style.display == 'block') {
                         document.getElementById('search-box').style.display = 'none';
+                    } else {
+                        document.getElementById('search-box').style.display = 'block';
                     }
                 }
             </script>
 
         </header>
-        
+
         <!-- navigation en mode xs que l'on fait apparaitre et disparaitre -->
         <nav id="navigation" class="nav-xs hidden-sm hidden-md hidden-lg">
             <ul class="list-unstyled">
@@ -85,7 +85,7 @@
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             </ul>
         </nav>
-        
+
         <!-- contaneur secondaire -->
         <div class="row">
             <div class="second-container col-xs-12 col-sm-12 col-md-10 col-md-push-2">

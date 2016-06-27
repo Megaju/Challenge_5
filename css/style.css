@@ -55,6 +55,7 @@ h1 {
 }
 /* --- bloc qui disparait et apparait --- */
 #search-box {
+    display: none;
     width: 100%;
     background-color: green;
     color: #fff;
@@ -88,6 +89,10 @@ h1 {
     height: 50px;
     padding: 18px 0 0 0;
     background-color: #000;
+    cursor: pointer;
+}
+.toogle:hover {
+    background-color: #333;
 }
 span.toogle-element {
     display: block;
@@ -97,6 +102,9 @@ span.toogle-element {
     margin: 0 auto 4px auto;
 }
 /* --- menu nav en xs --- */
+#navigation {
+    display: none;
+}
 .nav-xs {
     background-color: #000;
     color: #fff;
