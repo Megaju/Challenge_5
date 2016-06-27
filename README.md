@@ -1,3 +1,17 @@
+#Répartition des tâches
+##À deux :
+> Base du site, le squelette.
+> Corrections des bugs de fin
+> Footer
+
+##Nabil :
+> Bandeau avec les trois img en haut
+> Aside left
+
+##Julien :
+> Navigation principale
+> Partie centrale du site (la zone blanche)
+
 Exercice 5 : audiotheme
 
 A rendre avant le 28 juin.
