@@ -1,237 +1,62 @@
-<!DOCTYPE HTML>
-<html>
+<!Doctype html>
 
 <head>
-    <title>Challenge-5</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- styles css -->
-    <link rel="stylesheet" href="css/bootstrap-theme.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- scripts javascript -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <!-- fonts lato -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <title>Chicken Cliker</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/game.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- header - navigation... -->
-        <header class="row">
-            <div class="logo pull-left">
-                <h1>Progeny MMXIV</h1></div>
+    <div class="bloc section1">
+        <div class="chicken">
+            <h1>Chicken Clicker</h1>
+            <!-- bouton poulet pour gagner des oeufs!!! -->
+            <div type="button" class="poulet" onclick="clicOnChicken()"></div>
 
-            <!-- navigation - disparait en xs seulement -->
-            <nav class="hidden-xs">
-                <ul class="list-unstyled list-inline">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Gigs</a></li>
-                    <li><a href="#">Photos</a></li>
-                    <li><a href="#">Vidéos</a></li>
-                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-            </nav>
-
-            <!-- bouton toogle -->
-            <div onclick="navToogle()" class="toogle hidden-sm hidden-md hidden-lg">
-                <span class="toogle-element"></span>
-                <span class="toogle-element"></span>
-                <span class="toogle-element"></span>
+            <div>
+                <p>Eggs</p>
+                <p id="affichage-score">0</p>
             </div>
-            <!-- script pour gérer l'apparation et la disparition de la nav en xs -->
-            <script>
-                function navToogle() {
-                    if (document.getElementById('navigation').style.display == 'block') {
-                        document.getElementById('navigation').style.display = 'none';
-                    } else {
-                        document.getElementById('navigation').style.display = 'block';
-                    }
-                }
-            </script>
-
-            <!-- input search -->
-            <div id="search-case" class="col-xs-1 col-sm-1 col-md-1" onclick="searching()">
-                <i class="fa fa-search"></i>
-            </div>
-            <!-- script pour gérer l'apparation et la disparition de l'input search -->
-            <script>
-                function searching() {
-                    if (document.getElementById('search-box').style.display == 'block') {
-                        document.getElementById('search-box').style.display = 'none';
-                    } else {
-                        document.getElementById('search-box').style.display = 'block';
-                    }
-                }
-            </script>
-
-        </header>
-
-        <!-- navigation en mode xs que l'on fait apparaitre et disparaitre -->
-        <nav id="navigation" class="nav-xs hidden-sm hidden-md hidden-lg">
-            <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Gigs</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">Vidéos</a></li>
-                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            </ul>
-        </nav>
-
-        <!-- contaneur secondaire -->
-        <div class="row">
-            <div class="second-container col-xs-12 col-sm-12 col-md-10 col-md-push-2">
-                <!-- featured section -->
-                <section class="featured-section col-xs-12 col-sm-12 col-md-12">
-
-                    <!-- bloc recherche -->
-                    <div id="search-box">
-                        <input type="search" value="Search..." class="form-control">
-                    </div>
-                    <!-- /bloc recherche -->
-
-                    <!-- c'est là qu'on va mettre les 3 img -->
-                    <a class="col-xs-12 col-sm-6 col-md-4" href="#">
-                        <div class="article-img">
-                            <img src="images/nowell-featured-image-1038x576.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="header-img">
-                            <span class="min-link text-uppercase">Blog</span>
-                            <h2 class="text-uppercase">Nowell WordPress AudioTheme Features Overview</h2>
-                        </div>
-                    </a>
-
-                    <a class="col-xs-12 col-sm-6 col-md-4" href="#">
-                        <div class="article-img">
-                            <img src="images/rodney-hayden-atascosa-sand.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="header-img">
-                            <span class="min-link text-uppercase">Records</span>
-                            <h2 class="text-uppercase">Atascosa Sand</h2>
-                        </div>
-                    </a>
-
-                    <a class="col-xs-12 col-sm-6 col-md-4" href="#">
-                        <div class="article-img">
-                            <img src="images/322267385_640.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="header-img">
-                            <span class="min-link text-uppercase">Videos</span>
-                            <h2 class="text-uppercase">Drew Kennedy – Angel Band</h2>
-                        </div>
-                    </a>
-                </section>
-
-                <section class="c-white col-xs-12 col-sm-12 col-md-12">
-                    <!-- contenue princpal du site -->
-                    <div class="audiotheme col-xs-12 col-sm-8 col-md-8">
-                        <h2>AUDIOTHEME FRAMEWORK DEMO</h2>
-
-                        <!-- video youtube -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uIi44Hgjpl8" width="300" height="150"></iframe>
-                        </div>
-
-                        <p>The <a href="#">AudioTheme Framework</a> plugin is built to work with any WordPress theme, providing the features needed for a music-oriented website and allowing you to take your content with you anywhere you go — even when switching themes.</p>
-
-                        <p>In this demo, we’ve showcased how the AudioTheme Framework will look with the Twenty Fourteen theme and a little help with this child theme we’ve created. Take a look around at the functionality for displaying gigs and venues, discography (liner notes for the web), and videos.</p>
-                    </div>
-                    <!-- ASIDE DE DROITE -->
-                    <aside class="col-xs-12 col-sm-4 xol-md-4 aside-right">
-                        <h2>UPCOMING GIGS</h2>
-
-                        <table>
-                            <tr>
-                                <td><a href="#">Miller Auditorium</a></td>
-                                <td class="lieu">Kalamazoo, MI, United States</td>
-                                <td>October 10, 2016</td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Royal Albert Hall</a></td>
-                                <td class="lieu">London, ENG, United Kingdom</td>
-                                <td>April 24, 2017</td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Spokane Arena</a></td>
-                                <td class="lieu">Spokane, WA, United States</td>
-                                <td>May 20, 2017</td>
-                            </tr>
-                        </table>
-
-                        <h2><i class="fa fa-play"></i>FEATURED VIDEO</h2>
-                        <img src="images/audiotheme-overview-video-thumbnail.jpg" alt="audio theme" class="img-responsive" />
-                        <p>Overview showcasing a few of the features available in the <a href="#">AudioTheme Framework</a> via the WordPress admin.</p>
-
-                    </aside>
-                </section>
-            </div>
-
-            <!-- aside de gauche -->
-            <aside class="aside-left col-xs-12 col-sm-12 col-md-2 col-md-pull-10">
-                
-                <p class="description">Twenty Fourteen Child Theme</p>
-                
-                <!-- nav secondaire -->
-                <nav class="navbar">
-                    <ul class="nav navbar-nav gauche">
-                        <li><a href="#">Credits</a></li>
-                        <li><a href="#">Blog/News</a></li>
-                        <li><a href="#">Style Guide</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li class="active"><a href="#">Try Audiotheme!</a></li>
-                        <li><a href="#">
-                           Github
-                            <i class="fa fa-github"></i>
-                        </a></li>
-                        <li><a href="#">
-                           Wordpress
-                            <i class="fa fa-wordpress"></i>
-                        </a></li>
-                    </ul>
-                </nav>
-                
-                <!-- champ de recherche secondaire -->
-                <div class="recherche">
-                    <input type="text" class="form-control" placeholder="Search..."></input>
-                </div>
-                
-                <!-- recent release - image -->
-                <div class="release">
-                    <h4 class="text-uppercase">Recent Release</h4>
-                    <a href="#" class="zone-img">
-                        <img src="images/wide-listener-1024x1024.jpg" alt="" class="img-responsive">
-                    </a>
-                    <p>Released 9.10.13</p>
-                    <a class="link" href="#">Listen Now</a>
-                </div>
-                <div class="thanks">
-                    <h4 class="text-uppercase">Special Thanks</h4>
-                    <ul class="">
-                        <li><a href="#">Drew Kennedy</a></li>
-                        <li><a href="#">Rodney Hayden</a></li>
-                        <li><a href="#">Modern Trade</a></li>
-                    </ul>
-                    <p>Twenty Fourteen WordPress Child Theme by <a href="#">AudioTheme</a>.</p>
-
-                </div>
-
-            </aside>
-            </aside>
-
         </div>
-
-        <footer class="row">
-            <p><a href="#">Proudly powered by WordPress</a></p>
-        </footer>
-
+    </div>
+    <div class="bloc section2">
+        <h2>Score total</h2>
+        <p id="total-eggs">0</p>
+    </div>
+    <div class="bloc section3">
+        <h2>Multiplicateur</h2>
+        <div class="Bonus">
+            <h3>Amélioration</h3>
+            <!-- bouton multiplicateur -->
+            <button onclick="buy()">multiplicateur
+                <p>Nombre:</p>
+                <p id="nbr-multi">1</p>
+                <p>Prix:</p>
+                <p id="price">50</p>
+            </button>
+            <!-- bouton pour avoir l'autoclickeggs -->
+            <button onclick="buyAutoclick()">autoclickeggs
+               qui fonctionne pas encore...
+                <p>Nombre:</p>
+                <p id="nbAutoclick">0</p>
+                <p>Prix:</p>
+                <p id="price2">100</p>
+            </button>
+            <script>
+                
+            </script>
+            <!--
+            <p>Curseur</p>
+            <p>Fermier</p>
+            <p>Poulailler</p>
+            <p>Ferme</p>
+            <p>Usine</p>
+            <p>Laboratoire de clonage</p>
+            <p>Machine temporelle</p>
+            <p>Portail dimentionnel</p>-->
+        </div>
     </div>
 </body>
 
